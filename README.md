@@ -81,6 +81,10 @@ security:
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
 ```
+6. Update database & clear cache: `php bin/console doctrine:schema:update --force; php bin/console cache:clear; php bin/console cache:clear --env=prod`  
+You may have to set permissions back to www-data `chown -R www-data:www-data /usr/local/awhspanel/panel/*`
+7. Create your first user: `php bin/console fos:user:create yourUsername test@example.com yourPassword`
+8. Give your user admin privilege : `php bin/console fos:user:promote yourUsername ROLE_ADMIN`
 
 ## TODO
 - [ ] Multilingual
