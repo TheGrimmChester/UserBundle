@@ -1,0 +1,14 @@
+profile:
+    title: Profile
+    firstname: Fist name
+    lastname: Last name
+    address: Address
+    city: City
+    postal: Zip code
+    country: Country
+    phone: Phone
+    fax: Fax
+    email: Email
+    ipadress: IP Address
+    language: Language
+    registrationdate: Registration date

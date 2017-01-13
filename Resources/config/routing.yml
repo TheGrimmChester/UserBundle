@@ -1,0 +1,39 @@
+user:
+    path: /user
+    defaults: { _controller: AWHSUserBundle:Default:index }
+
+user_locale:
+    path: /user
+    defaults: { _controller: AWHSUserBundle:Default:index }
+
+register:
+    path: /register
+    defaults: { _controller: AWHSUserBundle:User:register }
+
+register_locale:
+    path: /register
+    defaults: { _controller: AWHSUserBundle:User:register }
+
+users_admin:
+    path: /admin/users
+    defaults: { _controller: AWHSUserBundle:DefaultAdmin:index }
+user_admin:
+    path: /admin/user/{user_id}
+    defaults: { _controller: AWHSUserBundle:DefaultAdmin:user }
+
+#Account
+awhs_user_account_credit:
+    path:  /account/credit
+    defaults: { _controller: AWHSUserBundle:Account:credit }
+awhs_user_account_ipn_starpass:
+    path:  /account/ipn/starpass
+    defaults: { _controller: AWHSUserBundle:Account:ipn_starpass }
+    methods:  [POST]
+awhs_user_account_ipn_starpass_success:
+    path:  /account/ipn/starpass
+    defaults: { _controller: AWHSUserBundle:Account:ipn_starpass_success }
+    methods:  [GET]
+
+awhs_user_account_products:
+    path: /account/products
+    defaults: { _controller: AWHSUserBundle:Account:products }

@@ -1,0 +1,80 @@
+{% extends '::'~awhs.template~'/base_dashboard.html.twig' %}
+
+{% trans_default_domain "service" %}
+
+{% block title %} {{ app_name }} - Crédits{% endblock %}
+
+{% block menu_user_money %}{{ client.money }}{% endblock %}
+{% block menu_user_lastip %}{{ client.lastip }}{% endblock %}
+{% block sidebarMenuDashboardActive %} active{% endblock %}
+
+{% block fastNavigation %}{% endblock %}
+{% block pageHeader %}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Ajouter du crédit</h3>
+                </div><!-- /.box-header -->
+                <div class="box-body no-padding">
+                    <div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#starpass_micro"
+                                                                      aria-controls="starpass_micro" role="tab"
+                                                                      data-toggle="tab">Starpass</a></li>
+                            {#<li role="presentation"><a href="#starpass_acte" aria-controls="starpass_acte" role="tab" data-toggle="tab">Starpass Acte</a></li>#}
+                            {#<li role="presentation"><a href="#lighte" aria-controls="lighte" role="tab" data-toggle="tab">Light Edition</a></li>
+                            <li role="presentation" class="active"><a href="#experte" aria-controls="experte" role="tab" data-toggle="tab">Expert Edition</a></li>#}
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="starpass_micro">
+                                <p style="padding:10px;">
+							<span>Ce type de document est adapté pour les crédit inférieur à 10&euro;.
+							Il est à noter qu'en raison du contrat signé avec Starpass, il nous est interdit de convertir l'argent directement en euro, 
+							ce qui veut dire que vous serez crédité en "crédit AWHS".</span>
+                                </p>
+                                <p style="padding:10px;">
+                                    <b>Référez-vous à la grille de versement (colonne "Gain Webmaster * HT") qui se
+                                        trouve directement sur <a
+                                                href="http://www.starpass.fr/micropaiement-code/reversement-micro-paiement-audiotel"
+                                                target="_blank">le site de Starpass </a> pour connaitre le crédit AWHS
+                                        auquel vous aurez droit.</b>
+                                </p>
+                                <div id="starpass_317926"></div>
+                                <script type="text/javascript"
+                                        src="https://script.starpass.fr/script.php?idd=317926&amp;verif_en_php=1&amp;datas={{ user.id }}"></script>
+                                <noscript>Veuillez activer le Javascript de votre navigateur s'il vous pla&icirc;t.<br/><a
+                                            href="http://www.starpass.fr/">Micro Paiement StarPass</a></noscript>
+                            </div>
+                            {#<div role="tabpanel" class="tab-pane" id="starpass_acte">
+                                <p style="padding:10px;">
+                                    <span>Ce type de document est adapté pour les crédit de 10&euro; et plus.
+                                    Il est à noter qu'en raison du contrat signé avec Starpass, il nous est interdit de convertir l'argent directement en euro,
+                                    ce qui veut dire que vous serez crédité en "crédit AWHS".</span>
+                                </p>
+                                <p style="padding:10px;">
+                                    <b>Référez-vous à la grille de versement (colonne "Gain Webmaster * HT") qui se trouve directement sur <a href="http://www.starpass.fr/micropaiement-code/reversement-micro-paiement-audiotel" target="_blank">le site de Starpass </a> pour connaitre le crédit AWHS auquel vous aurez droit.</b>
+                                </p>
+                                <div id="starpass_317921"></div><script type="text/javascript" src="https://script.starpass.fr/script.php?idd=317921&amp;datas={{user.id}}"></script><noscript>Veuillez activer le Javascript de votre navigateur s'il vous pla&icirc;t.<br /><a href="http://www.starpass.fr/">Micropaiement StarPass</a></noscript>
+                            </div>#}
+                            {#<div role="tabpanel" class="tab-pane" id="lighte">
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane active" id="experte">
+
+                            </div>#}
+                        </div>
+
+                    </div>
+
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
+        </div><!-- /.col -->
+    </div><!-- /.row -->
+{% endblock %}

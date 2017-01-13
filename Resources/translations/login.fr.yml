@@ -1,0 +1,8 @@
+login:
+  title: "Connexion"
+  welcome_message: "Bienvenue sur name"
+  help: "Merci de renseigner votre nom d'utilisateur ainsi que votre mot de passe afin de vous connecter."
+  remember_me: "Se souvenir de moi"
+  log_action: "Se conecter"
+  username: "Nom d'utilisateur"
+  password: "Mot de passe"

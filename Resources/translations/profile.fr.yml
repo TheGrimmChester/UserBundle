@@ -1,0 +1,14 @@
+profile:
+    title: Profil
+    firstname: Prénom
+    lastname: Nom
+    address: Adresse
+    city: Ville
+    postal: Code postal
+    country: Pays
+    phone: Téléphone
+    fax: Fax
+    email: E-mail
+    ipadress: Adresse IP
+    language: Langue
+    registrationdate: Date d'inscription

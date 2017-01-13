@@ -1,0 +1,8 @@
+login:
+  title: "Login"
+  welcome_message: "Welcome to name"
+  help: "Please fill in your username and password below to login."
+  remember_me: "Remember Me"
+  log_action: "Sign In"
+  username: "Username"
+  password: "Password"

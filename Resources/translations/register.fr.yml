@@ -1,0 +1,10 @@
+register:
+  title: "Inscription"
+  welcome_message: "Bienvenue sur name"
+  help: "Merci de renseigner les champs ci-dessous afin de vous inscrire."
+  remember_me: "Se souvenir de moi"
+  log_action: "Se conecter"
+  username: "Nom d'utilisateur"
+  password: "Mot de passe"
+  register: "S'inscrire"
+  email: "E-mail"

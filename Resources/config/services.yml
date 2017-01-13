@@ -1,0 +1,14 @@
+parameters:
+    # my_user_provider.class: AWHS\UserBundle\Security\Core\User\FOSUBUserProvider
+
+services:
+    awhs_user.profile.form.type:
+        class: AWHS\UserBundle\Form\Type\ProfileFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: awhs_user_profile }
+    awhs_user.registration.form.type:
+        class: AWHS\UserBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: awhs_user_registration }

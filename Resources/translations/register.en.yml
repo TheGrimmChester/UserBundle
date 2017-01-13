@@ -1,0 +1,10 @@
+register:
+  title: "Register"
+  welcome_message: "Welcome to name"
+  help: "Please fill in all the datas below to register."
+  remember_me: "Remember Me"
+  log_action: "Sign In"
+  username: "Username"
+  password: "Password"
+  register: "Sign up"
+  email: "Email"
